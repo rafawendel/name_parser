@@ -8,7 +8,7 @@ function parseName(name) {
     { matcher: /^(d\'|l\'|di).*/i, size: 2, capitalizable: 'no' }, // french and italian
     { matcher: /^(mc|de).*/i, size: 2, capitalizable: 'begin' }, // scottish and romanic
     { matcher: /^(mac).*/i, size: 3, capitalizable: 'begin' }, // scottish
-    { matcher: /^(o').*/i, size: 1, capitalizable: 'all' } // scottish
+    { matcher: /^(o').*/i, size: 2, capitalizable: 'all' } // scottish
   ];
   return name
     .split(' ')
