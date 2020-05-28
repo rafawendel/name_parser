@@ -23,7 +23,7 @@ function parseName(name) {
         const prefix = capitalizable === 'all'
           ? match.slice(0, size).toUpperCase()
           : capitalizable === 'begin'
-          ? `${match[0].toUpperCase()}${match.slice(0, size)}`
+          ? `${match[0].toUpperCase()}${match.slice(1, size)}`
           : match.slice(0, size)
         return `${prefix}${match.charAt(size).toUpperCase()}${match.slice(size + 1)}`
       }, null)
