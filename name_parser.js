@@ -18,7 +18,7 @@ function parseName(name) {
       unCapPrepositions.includes(p) ? p :
       prefixes.reduce((acc, { matcher, size, capitalizable }) => {
         const matchArr = p.match(matcher);
-        if (acc || match === null) return acc;
+        if (acc || matchArr === null) return acc;
         const [match] = matchArr;
         const prefix = capitalizable === 'all'
           ? match.slice(0, size).toUpperCase()
